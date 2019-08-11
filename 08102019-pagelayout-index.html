@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="x-ua-compatible" content="ie-edge" />
+		<meta name="keywords" content="html, css, js" /> 
+		<meta name="description" content="html css layout" />
+
+		<title>Page Layout CSS</title>
+		<!-- <link ref="stylesheet" href="./css/main.css" /> -->
+		<link ref="icon" href="./images/favicon.png" />
+
+		<style>
+			.container {
+				max-width: 940px;
+				/*margin-left: auto;
+				margin-right: auto;*/
+				margin: 0 auto 0 auto;
+			}
+			.content-area {
+				border-top: 3px solid #000;
+				border-bottom: 3px solid #000;
+			}
+			.main-area {
+				width: 66%;
+				float: left;
+			}
+			.sidebar {
+				width: 34%;
+				float: left;
+			}
+			.fix {
+				clear: both;
+			}
+			.group:before,
+			.group:after {
+				content: "";
+				display: table;
+			}
+			.group:after {
+				clear: both;
+			}
+			.group {
+				zoom: 1;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<h1>Website Title</h1>
+				<p>Website slogan included here.</p>
+			</header>
+
+			<div class="content-area group">
+				<!-- <div>Hello...</div> -->
+				<div class="main-area">
+					<p>This is the main area (or column). Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+				<aside class="sidebar">
+					<p>This is the sidebar (or second column). Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</aside>
+				<!-- <div class="fix"></div> -->
+			</div>
+
+			<footer>
+				<p>&copy;2019 Glenview HTML CSS Inc.</p>
+			</footer>
+		</div>
+		<script type="text/javascript" src="./js/script.js"></script>
+	</body>
+</html>
