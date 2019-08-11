@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="x-ua-compatible" content="ie-edge" />
+		<meta name="keywords" content="html, css, js" /> 
+		<meta name="description" content="html css layout" />
+
+		<title>Page Layout 2 CSS</title>
+		<!-- <link ref="stylesheet" href="./css/main.css" /> -->
+		<link ref="icon" href="./images/favicon.png" />
+
+		<style>
+			html {
+				background-color: #659469;
+			}
+			body {
+				font-family: Tahoma, sans-serif;
+				font-size: 87%;
+			}
+			.container {
+				max-width: 940px;
+				/*margin-left: auto;
+				margin-right: auto;*/
+				margin: 0 auto 0 auto;
+				background-color: #fff;
+				padding: 0 40px 0 40px;
+				/*box-sizing: border-box;*/
+			}
+			header {
+				padding: 20px 0 20px 0;
+				color: #314f34;
+			}
+
+			header h1 {
+				margin: 0;
+				font-weight: normal;
+				font-size: 165%;
+			}
+			header p {
+				margin: 0;
+			}
+
+			.content-area {
+				border-top: 3px solid #c0cfc1;
+				border-bottom: 3px solid #c0cfc1;
+			}
+			.main-area {
+				width: 66%;
+				float: left;
+				padding: 0 40px 0 0;
+				box-sizing: border-box;
+			}
+			.sidebar {
+				width: 34%;
+				float: left;
+				background-color: #c0cfc1;
+				padding: 20px 40px 20px 40px;
+				margin: 0;
+				box-sizing: border-box;
+				font-size: 85%;
+			}
+			footer {
+				text-align: center;
+				font-size: 85%;
+				color: #999;
+				padding: 20px 0 20px 0;
+				/*border: 1px solid #000;*/
+				margin: 0;
+			}
+
+			.fix {
+				clear: both;
+			}
+			.group:before,
+			.group:after {
+				content: "";
+				display: table;
+			}
+			.group:after {
+				clear: both;
+			}
+			.group {
+				zoom: 1;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<h1>Website Title</h1>
+				<p>Website slogan included here.</p>
+			</header>
+
+			<div class="content-area group">
+				<!-- <div>Hello...</div> -->
+				<div class="main-area">
+					<p>This is the main area (or column). Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>This is the main area (or column). Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+				<aside class="sidebar">
+					<p>This is the sidebar (or second column). Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				</aside>
+				<!-- <div class="fix"></div> -->
+			</div>
+
+			<footer>
+				<p>&copy;2019 Glenview HTML CSS Inc.</p>
+			</footer>
+		</div>
+		<script type="text/javascript" src="./js/script.js"></script>
+	</body>
+</html>
