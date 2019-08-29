@@ -1,0 +1,19 @@
+.container {
+	max-width: 940px;
+	margin: 0 auto 0 auto;
+}
+.content-area {
+	border-top: 3px solid #000;
+	border-bottom: 3px solid #000;
+}
+.main-area {
+	width: 66%;
+	float: left;
+}
+.sidebar {
+	width: 34%;
+	float: left;
+}
+.fix {
+	clear: both;
+}
