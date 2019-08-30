@@ -1,0 +1,115 @@
+$font-Arial: Arial, Helvetica, sans-serif;
+$font-Tahoma: Tahoma, sans-serif;
+$footer-font-size: 85%;
+
+$background-color: #50AB81;
+$background-container: #fff;
+$background-sidebar: #ACB9B3;
+$header-color: #1D553B;
+$box-sizing: border-box;
+
+html {
+	background-color: $background-color;
+}
+body {
+	font-family: $font-Arial;
+	font-size: 87%;
+}
+header {
+	margin: 0 0 0 0;
+	padding: 40px 0 40px 0;
+	color: $header-color;
+}
+header h1 {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	font-weight: normal;
+	font-size: 200%;
+}
+header p {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+.container {
+	background-color: $background-container;
+	max-width: 940px;
+	margin: 0 auto 0 auto;
+	padding: 0 40px 0 40px;
+	box-sizing: $box-sizing;
+}
+.content-area {
+	border-top: 3px solid #777;
+	border-bottom: 3px solid #777;
+}
+.main-area {
+	// border: 1px solid #000;
+	width: 66%;
+	float: left;
+	padding: 0 40px 0 0;
+	box-sizing: $box-sizing;
+}
+.sidebar {
+	// border: 1px solid #000;
+	width: 34%;
+	float: left;
+	padding: 20px 40px 20px 40px;
+
+	background-color: $background-sidebar;
+	font-size: 85%;
+	box-sizing: $box-sizing;
+}
+.sidebar p {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+.fix {
+	clear: both;
+}
+.group:before,
+.group:after {
+	content:"";
+	display: table;
+}
+.group:after {
+	clear: both;
+}
+.group {
+	zoom: 1;
+}
+footer {
+	text-align: center;
+	font-size: $footer-font-size;
+	margin: 0 0 0 0;
+	padding: 20px 0 20px 0;
+}
+footer p {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	color: #999;
+}
+@media screen and (max-width: 720px) {
+	header {
+		text-align: center;
+	}
+	.content-area {
+		display: flex;
+		flex-direction: column;
+	}
+	.main-area {
+		width: auto;
+		float: none;	
+		order: 2;
+		padding: 0 0 0 0;
+    	margin: 0 0 0 0;
+	}
+	.sidebar {
+		width: auto;
+		float: none;
+		order: 1;
+		padding: 20px 25px 20px 25px;
+    	margin: 0 0 0 0;
+	}
+	
+}
+

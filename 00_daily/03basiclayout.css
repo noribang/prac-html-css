@@ -1,0 +1,156 @@
+html {
+  background-color: #50AB81;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 87%;
+}
+
+header {
+  margin: 0 0 0 0;
+  padding: 40px 0 0px 0;
+  color: #1D553B;
+}
+
+header h1 {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  font-weight: normal;
+  font-size: 200%;
+}
+
+header p {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+.site-nav {
+  margin: 20px 0 0 0;
+}
+.site-nav ul {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+.site-nav li {
+  margin: 0 5px 0 0;
+  list-style: none;
+  float: left;
+}
+.site-nav a {
+  border: 3px solid #ACB9B3;
+  border-bottom: none;
+  padding: 10px 20px;
+  display: block;
+  text-decoration: none;
+  color: #1D553B;
+}
+.site-nav a:hover {
+  background-color: #ACB9B3;
+}
+
+.container {
+  background-color: #fff;
+  max-width: 940px;
+  margin: 0 auto 0 auto;
+  padding: 0 40px 0 40px;
+  box-sizing: border-box;
+}
+
+.content-area {
+  border-top: 3px solid #777;
+  border-bottom: 3px solid #777;
+}
+
+.main-area {
+  width: 66%;
+  float: left;
+  padding: 0 40px 0 0;
+  box-sizing: border-box;
+}
+
+.sidebar {
+  width: 34%;
+  float: left;
+  padding: 20px 40px 20px 40px;
+  background-color: #ACB9B3;
+  font-size: 85%;
+  box-sizing: border-box;
+}
+
+.sidebar p {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+.fix {
+  clear: both;
+}
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.group {
+  zoom: 1;
+}
+
+footer {
+  text-align: center;
+  font-size: 85%;
+  margin: 0 0 0 0;
+  padding: 20px 0 20px 0;
+}
+
+footer p {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  color: #999;
+}
+
+@media screen and (max-width: 720px) {
+  header {
+    text-align: center;
+  }
+
+  .content-area {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-area {
+    width: auto;
+    float: none;
+    order: 2;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+  }
+
+  .sidebar {
+    width: auto;
+    float: none;
+    order: 1;
+    padding: 20px 25px 20px 25px;
+    margin: 0 0 0 0;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 720px) {
+  .site-nav li {
+    width: 50%;
+    margin: 0 0 0 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .site-nav li {
+    width: 50%;
+    margin: 0 0 0 0;
+  }
+}
+
+/*# sourceMappingURL=03basiclayout.css.map */
