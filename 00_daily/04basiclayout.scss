@@ -39,8 +39,8 @@ img {
 // Banner overlay
 .image-banner {
 	position: relative;
-	left: 100px;
-	z-index: 10;
+	// left: 100px;
+	// z-index: 10;
 	img {
 		display: block;
 	}
@@ -54,6 +54,7 @@ img {
 	padding: 15px 25px;
 }
 /* end Image styling.*/
+
 /* Nav menu */
 .site-nav {
 	margin: 20px 0 0 0;
@@ -102,7 +103,7 @@ img {
 }
 .sidebar {
 	position: relative;
-	z-index: 11;
+	// z-index: 11;
 	width: 34%;
 	float: left;
 	padding: 20px 40px 20px 40px;

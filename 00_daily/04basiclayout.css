@@ -33,8 +33,6 @@ img {
 
 .image-banner {
   position: relative;
-  left: 100px;
-  z-index: 10;
 }
 .image-banner img {
   display: block;
@@ -98,7 +96,6 @@ img {
 
 .sidebar {
   position: relative;
-  z-index: 11;
   width: 34%;
   float: left;
   padding: 20px 40px 20px 40px;
